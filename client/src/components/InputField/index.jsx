@@ -2,8 +2,6 @@ import PropTypes from 'prop-types'
 
 const InputField = ({ register, name, type = 'text', placeholder, className}) => {
 
-    console.log(className, "<<< ni adalah classname")
-
     return(
         <input 
             {...register(name)}

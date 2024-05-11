@@ -1,7 +1,9 @@
 import Button from "../../components/Button";
+import Footer from "../../components/Footer";
 import Form from "../../components/Form";
 import HeaderLogin from "../../components/HeaderLogin";
 import InputField from "../../components/InputField";
+import Navbar from "../../components/Navbar";
 
 const LoginPage = () => {
     const handleLogin = (data) => {
@@ -9,6 +11,7 @@ const LoginPage = () => {
     }
     return(
         <>
+        <Navbar />
             <div className="flex items-center justify-center min-h-screen bg-gray-50">
                 <div className="w-full max-w-md p-8 space-y-8 border rouded-lg shadow-lg bg-white">
                     <HeaderLogin 
@@ -22,8 +25,10 @@ const LoginPage = () => {
                         <InputField name="password" type="password" placeholder="Password" className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"/>
                         <Button className="relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md">Login</Button>
                     </Form>
+                    
                 </div>
             </div>
+            <Footer />
         </>
     )
 }
