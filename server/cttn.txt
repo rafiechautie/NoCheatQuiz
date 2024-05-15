@@ -1,0 +1,1 @@
+npx prisma migrate dev --name modify_users_table -> menjalankan perintah migrasi
